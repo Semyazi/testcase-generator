@@ -1,0 +1,11 @@
+you need to make the following functions in pname-test.py
+
+gen(no args) -> test case tuple
+
+solve(*test case tuple) -> solution tuple
+
+tcin(no args) -> test case tuple [OPTIONAL: only needed for the verification step]
+tcout(*test case tuple) -> void
+
+ansin(no args) -> solution tuple
+ansout(*solution tuple) -> void
