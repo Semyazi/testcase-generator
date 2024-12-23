@@ -134,7 +134,6 @@ def cli():
     for tc in range(TC):
         ans=sol[tc]
         guess=ansin()
-        print(ans,guess)
         if ans==guess:continue
         failing_tcs.append(tcs[tc])
         failing_ans.append(sol[tc])
