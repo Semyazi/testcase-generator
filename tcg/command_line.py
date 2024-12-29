@@ -18,6 +18,12 @@ def randa(n,a,b):return[rand(a,b) for _ in range(n)] # random array
 # math utilities
 gcd=math.gcd
 def lcm(a,b):return a*b/gcd(a,b)
+def isprime(x):
+    i=2
+    while i*i<x:
+        if x%i==0:return False
+        i+=1
+    return True
 
 # writing utilities
 buf=""
