@@ -3,6 +3,7 @@ import sys
 import os
 import itertools as it
 from subprocess import Popen,PIPE,STDOUT
+import math
 import random
 random.seed(313)
 
@@ -13,6 +14,10 @@ def toarr(s):return[int(x) for x in s.split(' ')]
 rand=random.randint # random integer
 def randf(a,b):return random.random()*(b-a)+a # random float
 def randa(n,a,b):return[rand(a,b) for _ in range(n)] # random array
+
+# math utilities
+gcd=math.gcd
+def lcm(a,b):return a*b/gcd(a,b)
 
 # writing utilities
 buf=""
